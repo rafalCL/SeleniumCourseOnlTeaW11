@@ -1,6 +1,7 @@
 package selenium;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +12,7 @@ public class FirstSeleniumTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qwant.com");
         WebElement input = driver.findElement(By.name("q"));
-        input.sendKeys("selenium");
+        input.sendKeys("seleniumx" + Keys.BACK_SPACE);
         input.submit();
 //        driver.quit();
     }
